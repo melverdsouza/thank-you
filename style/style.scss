@@ -7,6 +7,7 @@ body {
 header {
     img {
         padding: 1em 1em;
+        height: 2em;
     }
 }
 
@@ -21,16 +22,18 @@ header {
         flex-direction: column;
         align-items: center;
         img {
-            margin: 8% 0%;
+            margin: 6% 0%;
+            height: 9em;
         }
         h1 {
-            font-size: 24px;
+            font-size: 22px;
             line-height: 2.13;
             margin: 0%;
             text-align: center;
         }
 
         h3 {
+            width: 100%;
             font-size: 16px;
             line-height: 1.5;
             color: #344563;
@@ -91,6 +94,7 @@ footer {
             text-align: center;
             img {
                 margin-top: 5%;
+                height: 4em;
             }
             h3 {
                 font-size: 16px;
@@ -102,7 +106,7 @@ footer {
 .collaboration {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px, 1fr;
+    grid-template-rows: auto, auto;
     grid-template-areas: "collText collText"
                          "texas great";
     padding-bottom: 8%;
@@ -113,15 +117,18 @@ footer {
         line-height: 1.71;
         margin: auto 0;
         grid-area: collText;
+        padding-bottom: 1%;
     }
     img {
-        width: 85%;
+        height: 4em;
         margin: 0 auto;
-        padding-top: 8%;
+        // padding-top: 8%;
         &:first-child {
             grid-area: texas;
         }
         &:last-child {
+            padding-top: 3%;
+            height: 3em;
             grid-area: great;
         }
     }
@@ -141,6 +148,9 @@ footer {
             }
             h1 {
                 margin-top: .5em;
+            }
+            h3 {
+                width: 30%;
             }
         }
     }
@@ -179,6 +189,11 @@ footer {
             display: flex;
             justify-content: space-between;
             padding-top: 1%;
+            .promote {
+                img {
+                    height: 2.5em;
+                }
+            }
         }
     }
     .promote {
@@ -186,11 +201,7 @@ footer {
             margin: 0%;
         }
     }
-}
-
-.collaboration {
-    padding-bottom: 3%;
-    img {
-        width: 60%;
+    .collaboration {
+        padding-bottom: 3%;
     }
 }

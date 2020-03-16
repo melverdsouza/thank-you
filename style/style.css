@@ -6,6 +6,7 @@ body {
 
 header img {
   padding: 1em 1em;
+  height: 2em;
 }
 
 .container {
@@ -27,17 +28,19 @@ header img {
 }
 
 .successfull .container img {
-  margin: 8% 0%;
+  margin: 6% 0%;
+  height: 9em;
 }
 
 .successfull .container h1 {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 2.13;
   margin: 0%;
   text-align: center;
 }
 
 .successfull .container h3 {
+  width: 100%;
   font-size: 16px;
   line-height: 1.5;
   color: #344563;
@@ -102,6 +105,7 @@ footer .container .promote {
 
 footer .container .promote img {
   margin-top: 5%;
+  height: 4em;
 }
 
 footer .container .promote h3 {
@@ -113,8 +117,8 @@ footer .container .promote h3 {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 50px, 1fr;
-      grid-template-rows: 50px, 1fr;
+  -ms-grid-rows: auto, auto;
+      grid-template-rows: auto, auto;
       grid-template-areas: "collText collText" "texas great";
   padding-bottom: 8%;
   text-align: center;
@@ -129,12 +133,12 @@ footer .container .promote h3 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: collText;
+  padding-bottom: 1%;
 }
 
 .collaboration img {
-  width: 85%;
+  height: 4em;
   margin: 0 auto;
-  padding-top: 8%;
 }
 
 .collaboration img:first-child {
@@ -144,6 +148,8 @@ footer .container .promote h3 {
 }
 
 .collaboration img:last-child {
+  padding-top: 3%;
+  height: 3em;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: great;
@@ -158,6 +164,9 @@ footer .container .promote h3 {
   }
   .successfull .container h1 {
     margin-top: .5em;
+  }
+  .successfull .container h3 {
+    width: 30%;
   }
   .thank-you {
     width: 40%;
@@ -199,16 +208,14 @@ footer .container .promote h3 {
             justify-content: space-between;
     padding-top: 1%;
   }
+  footer .container .promote img {
+    height: 2.5em;
+  }
   .promote h3 {
     margin: 0%;
   }
-}
-
-.collaboration {
-  padding-bottom: 3%;
-}
-
-.collaboration img {
-  width: 60%;
+  .collaboration {
+    padding-bottom: 3%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
