@@ -1,0 +1,214 @@
+body {
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Lato', sans-serif;
+}
+
+header img {
+  padding: 1em 1em;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.successfull .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.successfull .container img {
+  margin: 8% 0%;
+}
+
+.successfull .container h1 {
+  font-size: 24px;
+  line-height: 2.13;
+  margin: 0%;
+  text-align: center;
+}
+
+.successfull .container h3 {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #344563;
+  font-weight: normal;
+  margin: 0%;
+  text-align: center;
+}
+
+.program-page-link {
+  text-align: center;
+  margin-top: 8%;
+}
+
+.program-page-link .container {
+  position: relative;
+}
+
+.thank-you {
+  background-color: #eef4fd;
+  padding-bottom: 8%;
+}
+
+.thank-you h1 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 2.13;
+  padding-top: 3%;
+  margin: 0%;
+}
+
+.thank-you p {
+  width: 80%;
+  text-align: center;
+  margin: 3% auto;
+  margin-bottom: 9%;
+}
+
+.thank-you a {
+  background-color: #196ae5;
+  color: rgba(255, 255, 255, 0.87);
+  padding: 2% 5%;
+  text-decoration: none;
+  margin: 5% 0%;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.thank-you-background {
+  display: none;
+}
+
+footer {
+  width: 90%;
+  border-top: 1px solid #e8e8e8;
+  margin: 0% auto;
+  margin-top: 12%;
+}
+
+footer .container .promote {
+  text-align: center;
+}
+
+footer .container .promote img {
+  margin-top: 5%;
+}
+
+footer .container .promote h3 {
+  font-size: 16px;
+}
+
+.collaboration {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 50px, 1fr;
+      grid-template-rows: 50px, 1fr;
+      grid-template-areas: "collText collText" "texas great";
+  padding-bottom: 8%;
+  text-align: center;
+}
+
+.collaboration p {
+  font-size: 14px;
+  color: #344563;
+  line-height: 1.71;
+  margin: auto 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: collText;
+}
+
+.collaboration img {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 8%;
+}
+
+.collaboration img:first-child {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: texas;
+}
+
+.collaboration img:last-child {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: great;
+}
+
+@media only screen and (min-width: 769px) {
+  header img {
+    padding-left: 2em;
+  }
+  .successfull .container img {
+    margin: 0%;
+  }
+  .successfull .container h1 {
+    margin-top: .5em;
+  }
+  .thank-you {
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 4%;
+  }
+  .thank-you p {
+    width: 70%;
+    margin-bottom: 7%;
+  }
+  .thank-you-background {
+    display: inline;
+    position: absolute;
+    top: 12%;
+    left: 24%;
+    z-index: -1;
+  }
+  .dot {
+    height: 5px;
+    width: 5px;
+    background-color: #6c00ff;
+    border-radius: 50%;
+    display: inline-block;
+    margin: .4em;
+    opacity: .3;
+  }
+  .program-page-link {
+    margin-top: 2%;
+  }
+  footer {
+    margin-top: 5%;
+  }
+  footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 1%;
+  }
+  .promote h3 {
+    margin: 0%;
+  }
+}
+
+.collaboration {
+  padding-bottom: 3%;
+}
+
+.collaboration img {
+  width: 60%;
+}
+/*# sourceMappingURL=style.css.map */
